@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 
-RUN apt update && apt install -y wget gcc make bison bc flex libssl-dev libelf-dev
+RUN apt update && apt install -y wget gcc make bison bc flex libssl-dev libelf-dev python3
 
 RUN wget https://www.kernel.org/pub/linux/kernel/v6.x/linux-6.12.23.tar.gz
 
