@@ -6,4 +6,4 @@ RUN wget https://www.kernel.org/pub/linux/kernel/v6.x/linux-6.12.23.tar.gz
 
 RUN tar -xzf ./linux-6.12.23.tar.gz
 
-RUN cd linux-6.12.23 && make allyesconfig && make -j $(nproc)
+RUN cd linux-6.12.23 && make defconfig && make -j $(nproc)
